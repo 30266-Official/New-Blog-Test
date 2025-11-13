@@ -1,28 +1,25 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-
-Vue.use(VueRouter)
-
-
-<template>
-  <footer class="footer">
-    <div class="copyright">
-      <p>© 2024-{{ currentYear }} 林七湖 | <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.zh-hans" target="_blank">CC BY-NC 4.0</a> | <a href="https://icp.gov.moe/?keyword=20246111" target="_blank">萌ICP备20246111号</a></p>
-      <p>Theme Test By 林七湖 | Powered By <a href="https://nuxtjs.org.cn/" target="_blank">Nuxt.js</a> | Lastest 2025.11.13</p>
-    </div>
-  </footer>
-</template>
-
 <script>
 export default {
   name: 'AppFooter',
   data() {
     return {
       currentYear: new Date().getFullYear(),
+      ICP: "https://icp.gov.moe/?keyword=20246111",
+      CC4: "https://creativecommons.org/licenses/by-nc/4.0/deed.zh-hans",
+      NuxtLink: "https://nuxtjs.org.cn/",
     }
   }
 }
 </script>
+
+<template>
+  <footer class="footer">
+    <div class="copyright">
+      <p>© 2024-{{ currentYear }} 林七湖 | <a :href="CC4" target="_blank">CC BY-NC 4.0</a> | <a :href="ICP" target="_blank">萌ICP备20246111号</a></p>
+      <p>Theme Test By 林七湖 | Powered By <a :href="NuxtLink" target="_blank">Nuxt.js</a> | Lastest 2025.11.13</p>
+    </div>
+  </footer>
+</template>
 
 <style scoped>
 .footer {
