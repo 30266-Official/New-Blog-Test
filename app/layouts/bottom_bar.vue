@@ -13,12 +13,15 @@ export default {
 </script>
 
 <template>
-  <footer class="footer">
-    <div class="copyright">
-      <p>© 2024-{{ currentYear }} 林七湖 | <a :href="CC4" target="_blank">CC BY-NC 4.0</a> | <a :href="ICP" target="_blank">萌ICP备20246111号</a></p>
-      <p>Theme Test By 林七湖 | Powered By <a :href="NuxtLink" target="_blank">Nuxt.js</a> | Lastest 2025.11.13</p>
-    </div>
-  </footer>
+  <div class="app-container">
+    <footer class="footer">
+      <div class="copyright">
+        <p>© 2024-{{ currentYear }} 林七湖 | <a :href="CC4" target="_blank">CC BY-NC 4.0</a> | <a :href="ICP"
+            target="_blank">萌ICP备20246111号</a></p>
+        <p>Theme Test By 林七湖 | Powered By <a :href="NuxtLink" target="_blank">Nuxt.js</a> | Lastest 2025.11.13</p>
+      </div>
+    </footer>
+  </div>
 </template>
 
 <style scoped>
@@ -48,5 +51,20 @@ export default {
 .copyright a:hover {
   text-decoration: underline;
   color: #495057;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+}
+
+.footer {
+  height: 60px;
+  background-color: #f5f5f5;
 }
 </style>
