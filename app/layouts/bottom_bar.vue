@@ -29,8 +29,25 @@ export default {
   background-color: #f8f9fa;
   padding: 20px 0;
   text-align: center;
-  border-top: 1px solid #e9ecef;
+  border-top: none;
   margin-top: auto;
+  position: relative;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 10%;
+  right: 10%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    #e9ecef 20%,
+    #e9ecef 80%,
+    transparent 100%
+  );
 }
 
 .copyright {

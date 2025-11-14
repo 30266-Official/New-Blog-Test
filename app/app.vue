@@ -1,9 +1,3 @@
-<template>
-  <NuxtLayout>
-    <NuxtPage />
-  </NuxtLayout>
-  <bottom_bar />
-</template>
 <script>
 import bottom_bar from './layouts/bottom_bar.vue'
 
@@ -14,3 +8,10 @@ export default {
   }
 }
 </script>
+
+<template>
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
+  <bottom_bar />
+</template>
