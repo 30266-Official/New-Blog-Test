@@ -6,7 +6,6 @@
       </div>
     </header>
 
-    <!-- 主要内容 -->
     <main class="main-content">
       <slot />
     </main>

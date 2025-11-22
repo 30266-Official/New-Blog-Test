@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 import bottom_bar from './layouts/bottom_bar.vue'
 //import top_bar from './layouts/top_bar.vue'
 
@@ -10,8 +10,11 @@ export default {
   }
 }
 </script>
-
+<!--<script setup lang="ts">
+const { data } = await useFetch('/api/TencentAPI')
+</script>-->
 <template>
+  <!--<p>服务器到期时间：{{ data }}</p>-->
   <NuxtLayout>
     <NuxtPage />
   </NuxtLayout>

@@ -10,8 +10,14 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
     "nuxt": "^4.2.1",
+    "tencentcloud-sdk-nodejs-lighthouse": "^4.1.146",
     "vue": "^3.5.24",
     "vue-router": "^4.6.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1"
   }
 }
